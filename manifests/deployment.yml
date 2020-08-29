@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: yugandhargameoflife 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: yugandhargameoflife 
+    spec:
+      containers:
+        - name: yugandhargameoflife 
+          image: demoaks123.azurecr.io/yugandhargameoflife
+          ports:
+          - containerPort: 9090
